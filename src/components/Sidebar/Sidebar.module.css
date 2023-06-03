@@ -1,0 +1,32 @@
+.barContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000a10;
+}
+
+.btnText {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000a10;
+  margin-right: 0;
+}
+
+.img {
+  margin-left: 0;
+  margin-right: 12px;
+}
