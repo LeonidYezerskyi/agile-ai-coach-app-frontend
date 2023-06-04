@@ -1,5 +1,6 @@
 .container {
-  /* width: 100%; */
+  width: 1096px;
+  height: 570px;
   display: flex;
   margin-bottom: 42px;
   margin-right: auto;
@@ -11,12 +12,44 @@
 }
 
 .content {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin-right: 190px;
+  /* margin-right: 190px; */
+}
+
+.dialogWrapper {
+  overflow-y: scroll;
+}
+
+.contentWrapper1 {
+  width: 634px;
+  background-color: #c4ddff;
+  margin-left: 36px;
+  margin-right: 407px;
+  margin-top: 20px;
+}
+.contentWrapper2 {
+  width: 634px;
+  margin-left: 407px;
+  margin-right: 36px;
+  background-color: #fee2c5;
+  margin-top: 20px;
+}
+
+.txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000a10;
+  padding: 25px 43px 25px 44px;
+}
+
+.inputWrapper {
+  justify-content: center;
+  margin-left: 75px;
 }
 
 .input {
@@ -32,17 +65,6 @@
   /* margin-left: 245px; */
 }
 
-.contentWrapper1 {
-  width: 704px;
-  background-color: #fee2c5;
-}
-.contentWrapper2 {
-  width: 704px;
-  margin-left: 40px;
-  margin-right: 427px;
-  background-color: #c4ddff;
-}
-
 .btn {
-  margin-right: 190px;
+  /* margin-right: 190px; */
 }
