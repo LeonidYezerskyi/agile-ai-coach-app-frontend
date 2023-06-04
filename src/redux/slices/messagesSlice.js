@@ -2,15 +2,22 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const messagesSlice = createSlice({
   name: "messages",
-  initialState: [],
+  initialState: {
+    messages: [],
+    receivedMessages: [],
+  },
   reducers: {
     addMessage: (state, action) => {
       const { id, text } = action.payload;
-      state.push({ id, text });
+      state.messages.push({ id, text });
+    },
+    addReceivedMessage: (state, action) => {
+      const { id, text } = action.payload;
+      state.receivedMessages.push({ id, text });
     },
   },
 });
 
-export const { addMessage } = messagesSlice.actions;
+export const { addMessage, addReceivedMessage } = messagesSlice.actions;
 
 export default messagesSlice.reducer;
