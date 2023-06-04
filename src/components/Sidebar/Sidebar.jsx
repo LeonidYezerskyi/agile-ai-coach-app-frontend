@@ -1,7 +1,6 @@
-import { Drawer, List, ListItem, ListItemText } from '@mui/material';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Avatar, Box, Drawer, List, ListItem, Typography } from '@mui/material';
+import { Route, Routes, useNavigate, Link } from 'react-router-dom';
 import heartHands from "../../assets/heartHands.svg";
-import { Link } from 'react-router-dom';
 import ChatPage from '../../pages/ChatPage/ChatPage';
 import css from "./Sidebar.module.css"
 
@@ -13,36 +12,47 @@ const Sidebar = () => {
     };
 
     return (
-        < >
+        <Box >
             <Drawer variant="permanent" PaperProps={{
                 sx: {
-                    backgroundColor: "#d8e1ed",
+                    bgcolor: "#d8e1ed",
                     border: "none",
-                    width: "270px",
+                    width: 270,
                 }
             }}>
                 <List className={css.barContainer}>
-                    <div className={css.logo}>
+                    <Box className={css.logo}>
                         <ListItem>
                             <Link to='/' >
-                                <p className={css.logoText}>Agile</p>
+                                <Typography sx={{
+                                    fontWeight: 700,
+                                    fontSize: 24,
+                                    color: "#000a10",
+                                    ml: 2
+                                }}>Agile</Typography>
                             </Link>
                         </ListItem>
-                    </div>
-                    <div>
+                    </Box>
+                    <Box>
                         <Link to='/chat'>
                             <ListItem onClick={handleButtonClick} >
-                                <img className={css.img} src={heartHands} width="24" height="24" alt="Hands Heart" />
-                                <p className={css.btnText}>AI Agile Coach</p>
+                                <Avatar className={css.img} src={heartHands} sx={{ width: 24, height: 24 }} alt="Hands Heart" />
+                                <Typography sx={{
+                                    fontWeight: 700,
+                                    fontSize: 18,
+                                    color: "#000a10",
+                                    mr: 0
+                                }}>AI Agile Coach</Typography>
                             </ListItem>
                         </Link>
-                    </div>
+                    </Box>
                 </List>
             </Drawer>
+
             <Routes>
                 <Route path='chat' element={<ChatPage />} />
             </Routes>
-        </>
+        </Box>
     );
 };
 
