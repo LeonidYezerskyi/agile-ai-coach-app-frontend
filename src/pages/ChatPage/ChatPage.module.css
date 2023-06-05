@@ -21,7 +21,7 @@
 
 .dialogWrapper {
   overflow-y: auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .contentWrapper1 {
@@ -37,7 +37,7 @@
   text-align: left;
   width: 674px;
   margin-right: 60px;
-  margin-left: 673px;
+  margin-left: 340px;
   background-color: #fee2c5;
   margin-top: 20px;
   border-radius: 40px;
