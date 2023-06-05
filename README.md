@@ -1,5 +1,4 @@
-# agile-ai-coach-app-frontend
-agile-ai-coach-app-frontend
+# Agile-ai-coach-app
 
 The frontend part of application that enables users to generate user stories and seek advice from an AI Coach based on Agile principles. 
 
